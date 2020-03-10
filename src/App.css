@@ -1,0 +1,77 @@
+
+#full{
+  background-image: url('./resources/pizza.jpg');
+}
+.App {
+  text-align: center;
+ 
+  flex-wrap: wrap;
+
+}
+.search-form {
+  margin-right: 170px;
+  margin-left: 120px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  display: flexbox;
+  position: sticky;
+  
+}
+.search-bar{
+  position: relative;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  justify-content: center;
+  align-items: center;
+  width: 200 px;
+  background: #f1f1f1;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  box-shadow: 10px 10px 5px;
+}
+.search-bar:focus {
+  width: 40%;
+}
+.recipe{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.search-button{
+  margin-top: 30px;
+  position: absolute;
+  width: 75px;
+  height: 41.5px;
+  background: rgb(27, 27, 27);
+  color: white;
+  font-size: 16px;
+  border:  1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px black;
+}
+
+.search-button:hover {
+  background: #515a61;
+}
+
+.search-button::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.errorText{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 170px;
+    margin-left: 170px;
+    border-radius: 20px;
+    background-color: rgb(250, 250,250, 0.8);
+    border-style: solid;
+    border-color:black;
+
+}
